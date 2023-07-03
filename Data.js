@@ -19,6 +19,9 @@ module.exports = class Data {
         }
         else{
             return true;
+            this.dia = 1
+            this.mes = 1
+            this.ano = 1
         }
                 
     }
