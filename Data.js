@@ -3,7 +3,9 @@ module.exports = class Data {
         this.Dia = dia;
         this.Mes = mes;
         this.Ano = ano;
+    }
 
+    Constructor(){
         if (this.mes < 1 || this.mes > 12) {
             return false;
         }
@@ -15,6 +17,9 @@ module.exports = class Data {
         if (this.ano <= 0) {
             return false;
         }
-        return true;
+        else{
+            return true;
+        }
+                
     }
 }
