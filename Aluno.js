@@ -8,31 +8,17 @@ module.exports = class Aluno {
     this.media;
   }
   media() {
-    this.media = ((this.nota1 * 2, 5) + (this.nota2 * 2, 5) + this.trabalho * 2) / 7;
-    return `Media calculada: ${this.media}`
+    this.media =
+      ((this.nota1 * 2, 5) + (this.nota2 * 2, 5) + this.trabalho * 2) / 7;
+    return `Media calculada: ${this.media}`;
   }
 
-
-  final(){
-    if(this.media <= 7){
-        return `É necessario ${ 7 - this.media} para a prova final.`}
-    else{
-        return `Nota suficiente.`}    
+  final() {
+    if (this.media <= 7) {
+      return `O aluno precisa de ${12 - this.media} para ser aprovado!.`;
+    } else {
+      return `Nota suficiente.`;
+    }
   }
 
-
-
-  situacaoFinal(){
-    if(this.media < 7){
-        let quantNescessaria = 12 - this.media
-        console.log("O aluno precisa de "+quantNescessaria + " para ser aprovado!" )
-    }
-    else{
-        console.log("O aluno foi aprovado!")
-    }
-}
-
-
-
-
-}
+};
