@@ -7,4 +7,12 @@ module.exports = class Aluno {
         this.trabalho = pt
         this.media
     }
+
+
+
+    media() {
+        this.media = ((this.nota1 * 2,5) + (this.nota2 * 2,5) + (this.trabalho * 2)) / 7;
+        return this.media;
+    }
+
 }
