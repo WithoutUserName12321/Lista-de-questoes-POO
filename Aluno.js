@@ -13,7 +13,12 @@ module.exports = class Aluno {
   }
 
 
-
+  final(){
+    if(this.media <= 7){
+        return `É necessario ${ 7 - this.media} para a prova final.`}
+    else{
+        return `Nota suficiente.`}    
+  }
 
 
 
