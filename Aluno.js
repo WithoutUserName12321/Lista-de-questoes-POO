@@ -22,6 +22,15 @@ module.exports = class Aluno {
 
 
 
+  situacaoFinal(){
+    if(this.media < 7){
+        let quantNescessaria = 12 - this.media
+        console.log("O aluno precisa de "+quantNescessaria + " para ser aprovado!" )
+    }
+    else{
+        console.log("O aluno foi aprovado!")
+    }
+}
 
 
 
